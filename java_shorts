@@ -1,19 +1,23 @@
 2D ArrayList to 2D array:
-      Q.       List<int[]> ans = new ArrayList<>();
-      Sol.    int[][] final = ans.toArray(new int[ans.size()][])
+            List<int[]> ans = new ArrayList<>();
+
+          int[][] final = ans.toArray(new int[ans.size()][])
 
 1D ArrayList to 1D array:
-      Q.      List<Integer> myList = new ArrayList<>();
-      Sol.    int[] ans = myList.stream().mapToInt(Integer:: intValue).toArray();
-      Sol.    int[] arr = myList.stream().mapToInt(i->i).toArray();
-      Sol.    Integer[] arr = myList.toArray(new Integer[list.size()]);
+           List<Integer> myList = new ArrayList<>();
 
-int[] to ArrayList<Integer>               # you can't add more element to the arraylist 
-      Q.   int[] a = new int[]{1,23,4,6};
-      Sol. List<Integer> list = Arrays.stream(a).boxed().collect(Collectors.toList());
+          int[] ans = myList.stream().mapToInt(Integer:: intValue).toArray();
+          int[] arr = myList.stream().mapToInt(i->i).toArray();
+          Integer[] arr = myList.toArray(new Integer[list.size()]);
 
-Integer to ArrayList<Integer> :          # you can't add more element to the arraylist 
-      Q.       Integer[] a = new Integer[]{1,23,4}
-      Sol.    List<Integer> list = Arrays.asList(a);
+int[] to ArrayList<Integer>               # You can't add more elements to the ArrayList 
+         int[] a = new int[]{1,23,4,6};
+
+       List<Integer> list = Arrays.stream(a).boxed().collect(Collectors.toList());
+
+Integer[] to ArrayList<Integer> :          # You can't add more elements to the ArrayList 
+            Integer[] a = new Integer[]{1,23,4}
+
+          List<Integer> list = Arrays.asList(a);
       
         
