@@ -19,5 +19,8 @@ Integer[] to ArrayList<Integer> :          # You can't add more elements to the 
             Integer[] a = new Integer[]{1,23,4}
 
           List<Integer> list = Arrays.asList(a);
-      
-        
+
+
+int[] dir = {{-1, -1},  {-1, 0},  {-1, 1},  {0, -1},  {0, 0},  {0, 1},  {1, -1},  {1, 0},  {1, 1}}; // 8d
+int[] dir = {{0,1}, {1,0}, {0,-1}, {-1,0}};   // 4d
+int[] dir = {{-1,-1}, {1,1}, {1-,1}, {1,-1}};   // diagonal dirs
